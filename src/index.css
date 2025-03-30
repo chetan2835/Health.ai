@@ -1,0 +1,127 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 200 33% 98%;
+    --foreground: 210 24% 16%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 24% 16%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 24% 16%;
+
+    --primary: 196 78% 47%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 154 50% 48%;
+    --secondary-foreground: 210 24% 16%;
+
+    --muted: 210 10% 96%;
+    --muted-foreground: 210 10% 47%;
+
+    --accent: 196 78% 95%;
+    --accent-foreground: 196 78% 47%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 91%;
+    --input: 210 20% 91%;
+    --ring: 196 78% 47%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5% 26%;
+    --sidebar-primary: 196 78% 47%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 5% 96%;
+    --sidebar-accent-foreground: 240 6% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217 91% 60%;
+  }
+
+  .dark {
+    --background: 210 24% 10%;
+    --foreground: 0 0% 95%;
+
+    --card: 210 24% 13%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 210 24% 13%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 196 78% 47%;
+    --primary-foreground: 210 24% 10%;
+
+    --secondary: 154 50% 48%;
+    --secondary-foreground: 210 24% 10%;
+
+    --muted: 210 24% 18%;
+    --muted-foreground: 210 10% 70%;
+
+    --accent: 196 30% 25%;
+    --accent-foreground: 0 0% 95%;
+
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 210 24% 24%;
+    --input: 210 24% 24%;
+    --ring: 196 78% 40%;
+
+    --sidebar-background: 210 24% 16%;
+    --sidebar-foreground: 240 5% 95%;
+    --sidebar-primary: 196 78% 47%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 4% 16%;
+    --sidebar-accent-foreground: 240 5% 96%;
+    --sidebar-border: 240 4% 20%;
+    --sidebar-ring: 217 91% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-background/70 backdrop-blur-md border border-border/50 shadow-md;
+  }
+  
+  .glass-card {
+    @apply bg-card/70 backdrop-blur-sm border border-border/50 shadow-md rounded-2xl;
+  }
+  
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .h1 {
+    @apply text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl;
+  }
+  
+  .h2 {
+    @apply text-3xl font-bold tracking-tight sm:text-4xl;
+  }
+  
+  .h3 {
+    @apply text-2xl font-bold tracking-tight sm:text-3xl;
+  }
+  
+  .h4 {
+    @apply text-xl font-bold tracking-tight sm:text-2xl;
+  }
+}

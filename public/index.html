@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health.AI - AI-Powered Healthcare Diagnosis</title>
+    <script src='https://cdn.jotfor.ms/s/umd/latest/for-embedded-agent.js'></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", function() {
+        window.AgentInitializer.init({
+          agentRenderURL: "https://agent.jotform.com/0195e31eaac77872aab0b74077e76b4f44fc",
+          rootId: "JotformAgent-0195e31eaac77872aab0b74077e76b4f44fc",
+          formID: "0195e31eaac77872aab0b74077e76b4f44fc",
+          queryParams: ["skipWelcome=1", "maximizable=1"],
+          domain: "https://www.jotform.com",
+          isDraggable: false,
+          background: "linear-gradient(180deg, #FFFDF7 0%, #F5ECD3 100%)",
+          buttonBackgroundColor: "#0A1551",
+          buttonIconColor: "#FFF",
+          variant: false,
+          customizations: {
+            "greeting": "Yes",
+            "greetingMessage": "Hi! How can I assist you?",
+            "openByDefault": "No",
+            "pulse": "Yes",
+            "position": "right",
+            "autoOpenChatIn": "0"
+          },
+          isVoice: false
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="JotformAgent-0195e31eaac77872aab0b74077e76b4f44fc"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
